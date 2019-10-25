@@ -12,3 +12,8 @@ RUN apt-get update && \
 EXPOSE 9987/udp 30033 10011 
 
 ENTRYPOINT ["sh", "./teamspeak3-server_linux_amd64/ts3server_minimal_runscript.sh"]
+
+# Build image
+# docker build -t ts3 .
+# Run container
+# docker run -it --name ts -p 9987:9987/udp -p 10011:10011 -p 30033:30033 ts3
