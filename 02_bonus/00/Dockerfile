@@ -14,3 +14,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 CMD ["flask", "run"]
+
+# create app.py and requirements.txt
+# docker-compose up
+# open 192.168.99.101:5000
